@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "2"
+# ///
 import pyspark.sql.functions as F
 from pyspark.sql.functions import col
 
@@ -38,7 +42,7 @@ df_clean = df_clean.dropDuplicates(["customerID"])
 # COMMAND ----------
 
 df_clean.printSchema()
-display(df_clean.limit(10))
+display(df_clean.limit(11))
 
 # COMMAND ----------
 
