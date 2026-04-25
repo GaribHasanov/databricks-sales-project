@@ -50,7 +50,3 @@ df_clean.write.format("delta") \
     .mode("overwrite") \
     .option("overwriteSchema", "true") \
     .saveAsTable(silver_table)
-
-# COMMAND ----------
-
-
